@@ -1,0 +1,115 @@
+RangeShifter 2.0 
+================    =====================
+
+BATCH MODE 	yes
+SEED 	851776781
+REPLICATES 	4
+YEARS 	100
+REPRODUCTIVE SEASONS / YEAR	1
+PATCH-BASED MODEL
+No. PATCHES 	106
+BOUNDARIES 	reflective
+
+LANDSCAPE:	imported map
+TYPE: 	habitat codes
+FILE NAME: Corine_2018_4km_France.asc
+PATCH FILE: Corine_2018_4km_France_patches.asc
+No. HABITATS:	10
+RESOLUTION (m): 	4000
+DIMENSIONS:  X 263  Y 277
+AVAILABLE:   min.X 0 min.Y 0  max.X 262 max.Y 276
+
+SPECIES DISTRIBUTION LOADED: 	no
+
+ENVIRONMENTAL GRADIENT:	 no
+ENVIRONMENTAL STOCHASTICITY:	no
+LOCAL EXTINCTION PROBABILITY:	0.0
+
+SPECIES' PARAMETERS.
+REPRODUCTION:
+TYPE: Asexual / Only female model
+STAGE STRUCTURE:	yes
+PROBABILITY OF REPRODUCING IN SUBSEQUENT SEASONS	1
+No. OF REP. SEASONS BEFORE SUBSEQUENT REPRODUCTIONS	0
+No. STAGES	5
+MAX. AGE	27
+MIN. AGES:
+stage	0:	0	years
+stage	1:	0	years
+stage	2:	0	years
+stage	3:	0	years
+stage	4:	0	years
+FECUNDITIES:
+stage	0:	0
+stage	1:	0
+stage	2:	0
+stage	3:	4.3731
+stage	4:	5.93252
+DEVELOPMENT PROB.:
+stage	0:	1
+stage	1:	1
+stage	2:	0.926375
+stage	3:	0.394688
+stage	4:	0
+SURVIVAL PROB.:
+stage	0:	1
+stage	1:	0.410503
+stage	2:	0.531385
+stage	3:	0.398755
+stage	4:	0.276598
+SCHEDULING OF SURVIVAL: Between reproductive events
+DENSITY-DEPENDENCE IN FECUNDITY:	yes
+not stage-dependent
+DENSITY-DEPENDENCE IN DEVELOPMENT:	no
+DENSITY-DEPENDENCE IN SURVIVAL:		no
+
+HABITAT SPECIFIC 1/b:
+Habitat 1: 	1/b 0
+Habitat 2: 	1/b 0
+Habitat 3: 	1/b 0
+Habitat 4: 	1/b 0.04
+Habitat 5: 	1/b 0
+Habitat 6: 	1/b 0
+Habitat 7: 	1/b 0
+Habitat 8: 	1/b 0
+Habitat 9: 	1/b 0
+Habitat 10: 	1/b 0
+
+DISPERSAL - EMIGRATION:	density-dependent
+SEX-DEPENDENT:   no
+STAGE-DEPENDENT: yes
+INDIVIDUAL VARIABILITY: no
+stage 0: 	D0: 0 	alpha: 0 	beta: 0
+stage 1: 	D0: 0.8 	alpha: 10 	beta: 1
+stage 2: 	D0: 0.05 	alpha: 10 	beta: 1
+stage 3: 	D0: 0 	alpha: 0 	beta: 0
+stage 4: 	D0: 0 	alpha: 0 	beta: 0
+
+DISPERSAL - TRANSFER: 	CRW
+INDIVIDUAL VARIABILITY: no
+STEP LENGTH (m) : 4000
+STEP CORRELATION: 0.5
+STRAIGHTEN PATH AFTER DECISION NOT TO SETTLE: no
+STEP MORTALITY:	
+constant 0.01
+
+DISPERSAL - SETTLEMENT:
+MIN. No. OF STEPS:	 0
+MAX. No. OF STEPS:	 42
+SEX-DEPENDENT:   no
+STAGE-DEPENDENT: no
+SETTLE IF: find a suitable cell/patch (not the natal one)
+MAX. No. OF STEPS/YEAR:	 not applied
+
+GENETICS:
+No. of variable traits:  0
+
+INITIALISATION CONDITIONS:
+From initial individuals file: models/Wildboar/Inputs/InitInds_1.txt
+
+OUTPUTS:
+Range - every 1 year
+Occupancy - every 1 year
+Populations - every 1 year
+SAVE MAPS: no
+SAVE TRAITS MAPS: no

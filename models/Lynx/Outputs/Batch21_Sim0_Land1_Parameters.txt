@@ -1,0 +1,153 @@
+RangeShifter 2.0 
+================    =====================
+
+BATCH MODE 	yes
+SEED 	324135
+REPLICATES 	100
+YEARS 	100
+REPRODUCTIVE SEASONS / YEAR	1
+PATCH-BASED MODEL
+No. PATCHES 	39
+BOUNDARIES 	reflective
+
+LANDSCAPE:	imported map
+TYPE: 	habitat codes
+FILE NAME: LCM_Scotland_2015_1000.asc
+PATCH FILE: woodland_patchIDs_1000.asc
+No. HABITATS:	10
+RESOLUTION (m): 	1000
+DIMENSIONS:  X 465  Y 451
+AVAILABLE:   min.X 0 min.Y 0  max.X 464 max.Y 450
+
+SPECIES DISTRIBUTION LOADED: 	no
+
+ENVIRONMENTAL GRADIENT:	 no
+ENVIRONMENTAL STOCHASTICITY:	no
+LOCAL EXTINCTION PROBABILITY:	0.0
+
+SPECIES' PARAMETERS.
+REPRODUCTION:
+TYPE: Sexual model (simple)
+PROP. of MALES	0.5
+STAGE STRUCTURE:	yes
+PROBABILITY OF REPRODUCING IN SUBSEQUENT SEASONS	1
+No. OF REP. SEASONS BEFORE SUBSEQUENT REPRODUCTIONS	0
+No. STAGES	4
+MAX. AGE	17
+MIN. AGES:
+stage	0:	0	years
+stage	1:	0	years
+stage	2:	0	years
+stage	3:	0	years
+FECUNDITIES:
+stage	0:	0
+stage	1:	0
+stage	2:	0
+stage	3:	5
+DEVELOPMENT PROB.:
+stage	0:	1
+stage	1:	1
+stage	2:	1
+stage	3:	0
+SURVIVAL PROB.:
+stage	0:	1
+stage	1:	0.53
+stage	2:	0.63
+stage	3:	0.76
+SCHEDULING OF SURVIVAL: Between reproductive events
+DENSITY-DEPENDENCE IN FECUNDITY:	yes
+not stage-dependent
+DENSITY-DEPENDENCE IN DEVELOPMENT:	no
+DENSITY-DEPENDENCE IN SURVIVAL:		no
+
+HABITAT SPECIFIC 1/b:
+Habitat 1: 	1/b 0
+Habitat 2: 	1/b 0
+Habitat 3: 	1/b 0
+Habitat 4: 	1/b 0
+Habitat 5: 	1/b 0
+Habitat 6: 	1/b 0
+Habitat 7: 	1/b 0.000285
+Habitat 8: 	1/b 0
+Habitat 9: 	1/b 0
+Habitat 10: 	1/b 0
+
+DISPERSAL - EMIGRATION:	density-dependent
+SEX-DEPENDENT:   yes
+STAGE-DEPENDENT: yes
+INDIVIDUAL VARIABILITY: no
+stage 0:
+D0:    females 0.4  males 0.9
+alpha: females 10  males 10
+beta:  females 1  males 1
+stage 1:
+D0:    females 0  males 0
+alpha: females 0  males 0
+beta:  females 0  males 0
+stage 2:
+D0:    females 0  males 0
+alpha: females 0  males 0
+beta:  females 0  males 0
+stage 3:
+D0:    females 0  males 0
+alpha: females 0  males 0
+beta:  females 0  males 0
+
+DISPERSAL - TRANSFER: 	SMS	costs:
+	hab. 1	100000
+	hab. 2	30
+	hab. 3	100
+	hab. 4	1000
+	hab. 5	1000
+	hab. 6	10
+	hab. 7	1
+	hab. 8	10
+	hab. 9	10
+	hab. 10	7
+PERCEPTUAL RANGE:        1
+PERCEPTUAL RANGE METHOD: 2
+DIRECTIONAL PERSISTENCE: 5
+MEMORY SIZE: 5
+GOAL TYPE:   0
+INDIVIDUAL VARIABILITY: no 
+STRAIGHTEN PATH AFTER DECISION NOT TO SETTLE: yes
+STEP MORTALITY:	
+habitat dependent:	
+	hab. 1	0.9999
+	hab. 2	0.0002
+	hab. 3	0.0005
+	hab. 4	0.007
+	hab. 5	1e-05
+	hab. 6	1e-05
+	hab. 7	0
+	hab. 8	1e-05
+	hab. 9	1e-05
+	hab. 10	1e-05
+
+DISPERSAL - SETTLEMENT:
+MIN. No. OF STEPS:	 0
+MAX. No. OF STEPS:	 500
+SEX-DEPENDENT:   yes
+STAGE-DEPENDENT: no
+FEMALES:
+SETTLE IF: find a suitable cell/patch + density dependence 
+S0: 1  AlphaS: -10  BetaS: 1
+MAX. No. OF STEPS/YEAR:	 not applied
+MALES:
+SETTLE IF: find a suitable cell/patch + density dependence + mating requirements
+S0: 1  AlphaS: -10  BetaS: 1
+MAX. No. OF STEPS/YEAR:	 not applied
+
+GENETICS:
+No. of variable traits:  0
+
+INITIALISATION CONDITIONS:
+From initial individuals file: models/Lynx/Inputs/InitInds_29.txt
+
+OUTPUTS:
+Range - every 1 year
+Occupancy - every 1 year
+Populations - every 1 year
+SAVE MAPS: no
+SAVE TRAITS MAPS: no
+SMS HEAT MAPS: no

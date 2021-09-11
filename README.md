@@ -1,0 +1,1 @@
+ ![image](results/time_series/series.gif)
